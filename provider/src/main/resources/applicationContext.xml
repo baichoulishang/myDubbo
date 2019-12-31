@@ -25,6 +25,6 @@
     <context:component-scan base-package="service"/>
     <context:component-scan base-package="service-pojo"/>
 
-<!--    <import resource="dubbo/provider-config.xml"/>-->
+    <import resource="dubbo/provider-config.xml"/>
 
 </beans>

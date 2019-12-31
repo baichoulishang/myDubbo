@@ -16,14 +16,15 @@ import java.util.List;
  * @date 2019/12/29 12:53
  * @forWhat
  */
-@Service("roleService")
+@Service
 public class RoleService implements IRoleService,
         BeanNameAware, BeanFactoryAware, InitializingBean {
 
     @Override
     public Role selectRole(String id) {
-        System.out.println("fuck");
-        return null;
+        Role role = new Role();
+        role.setId("此时此刻");
+        return role;
 
     }
 

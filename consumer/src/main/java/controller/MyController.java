@@ -23,8 +23,8 @@ public class MyController {
     @RequestMapping("/index")
     public ModelAndView index() {
         ModelAndView modelAndView = new ModelAndView();
-        roleService.insertRole(new Role());
-
+        Role role = roleService.selectRole("111222");
+        System.out.println(role.getId());
         modelAndView.setViewName("jsp/index.jsp");
         return modelAndView;
     }
