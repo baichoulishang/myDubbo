@@ -15,6 +15,7 @@
     </dubbo:application>
 
 
+    <!--    没错,需要用push!-->
 
     <!--关闭注册中心启动时检查：(注册订阅失败时报错)-->
     <dubbo:registry address="zookeeper://192.168.8.103:2181" check="false"/>
