@@ -8,8 +8,6 @@
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
 
-    <!-- 具体的实现bean -->
-    <bean id="roleService" class="service.RoleService"/>
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="api.IRoleService" ref="roleService"/>
 

@@ -23,7 +23,6 @@
     <context:annotation-config/>
     <!--把扫描到的资源Bean装载进Spring IoC-->
     <context:component-scan base-package="service"/>
-    <context:component-scan base-package="service-pojo"/>
 
     <import resource="dubbo/provider-config.xml"/>
 

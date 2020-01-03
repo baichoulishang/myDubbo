@@ -18,8 +18,8 @@
     <!--    没错,需要用push!-->
 
     <!--关闭注册中心启动时检查：(注册订阅失败时报错)-->
-    <dubbo:registry address="zookeeper://192.168.8.103:2181" check="false"/>
-    <dubbo:protocol host="192.168.8.103"/>
+    <dubbo:registry address="zookeeper://192.168.1.103:2181" check="false"/>
+    <dubbo:protocol host="192.168.1.103"/>
     <!--关闭所有服务的启动时检查：(没有提供者时报错)  写在定义服务消费者一方-->
     <dubbo:consumer check="false"/>
 

@@ -23,7 +23,7 @@
     <!--开启切面-->
     <aop:aspectj-autoproxy/>
     <!--使用注解驱动Spring IoC-->
-    <context:annotation-config></context:annotation-config>
+    <context:annotation-config/>
     <!--把扫描到的资源Bean装载进Spring IoC-->
     <!--这种写法居然也不会报错-->
     <context:component-scan base-package="controller"/>

@@ -1,4 +1,3 @@
-<%@ page import="cn.hutool.core.date.DateTime" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%request.setAttribute("ctx", request.getContextPath());%>
 <html>
