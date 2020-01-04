@@ -12,21 +12,12 @@
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
     <!-- 扫描所有的controller -->
     <!--指定一个package进行扫描.也可以配置com.*-->
+    <!--这个扫描项在Spring IoC的配置中也有相同的一份,但是二者都必须保留-->
     <context:component-scan base-package="controller"/>
+
 
     <!-- 定义视图解析器 -->
     <!-- 找到Web工程/WEB-INF/JSP文件夹，且文件结尾为jsp的文件作为映射 -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/" p:suffix=""/>
-
-    <!-- 支持文件上传 -->
-    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <!-- 请求编码格式 -->
-        <property name="defaultEncoding" value="utf-8"></property>
-        <!-- 上传文件大小(单位:字节) -->
-        <property name="maxUploadSize" value="50000000"></property>
-        <!-- 缓冲区大小(单位:KB) -->
-        <property name="maxInMemorySize" value="1024"></property>
-    </bean>
-
 </beans>
