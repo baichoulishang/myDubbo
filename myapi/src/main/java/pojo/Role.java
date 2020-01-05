@@ -2,7 +2,6 @@ package pojo;
 
 import java.io.Serializable;
 
-// @Alias("role")
 public class Role implements Serializable {
     private String id;
     private String rolename;
